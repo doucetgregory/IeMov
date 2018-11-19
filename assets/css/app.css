@@ -95,7 +95,7 @@ body {
 
 
 .navbar-admin {
-    display: none;
+    display: block;
     height: 30px;
     box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
     background-color: #efefef;

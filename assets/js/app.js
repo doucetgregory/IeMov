@@ -14,6 +14,6 @@ require('../css/app.css');
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 
 //Configuration pour pouvoir afficher les images
-//Recherche toutes les images du dossier "../images"
+//Recherche tous les fichiers du dossier "../images" possédant l'extension correspondante
 const imagesContext = require.context('../images', true, /\.(png|jpg|jpeg|gif|ico|svg|webp)$/);
 imagesContext.keys().forEach(imagesContext);
