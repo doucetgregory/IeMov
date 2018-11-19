@@ -1,0 +1,294 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+.navbar-custom {
+    height: 50px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.navbar-brand {
+    color: #707070;
+    font-size: 25px;
+}
+
+.navbar-brand span {
+    color: #ff5500;
+}
+
+.navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-nav li {
+    border-bottom: solid 2px transparent;
+}
+
+.navbar-nav li:hover {
+    border-bottom: solid 2px;
+    border-color: #ff5500;
+    transition: 0.5s;
+}
+
+.navbar-nav li a {
+    font-size: 20px;
+    color: #707070;
+}
+
+.navbar-nav li:hover a {
+    background-color: transparent;
+    color: #ff5500;
+    transition: 0.5s;
+}
+
+.navbar-button {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.navbar-button button {
+    padding: 3px 15px 0px 15px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-bottom: solid 2px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: transparent;
+}
+
+.navbar-button button:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.navbar-button .btn-identification {
+    color: #707070;
+}
+
+
+.navbar-button .btn-identification:hover {
+    background-color: #707070;
+    border-color: #707070;
+}
+
+.navbar-button .btn-connexion {
+    color: #ff5500;
+}
+
+.navbar-button .btn-connexion:hover {
+    background-color: #ff5500;
+    border-color: #ff5500;
+}
+
+
+
+
+
+
+
+.navbar-admin {
+    display: none;
+    height: 30px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+    background-color: #efefef;
+}
+
+.navbar-admin .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.navbar-admin a {
+    color: #707070;
+    line-height: 30px;
+    border-bottom: solid 2px transparent;
+}
+
+.navbar-admin a:hover {
+    border-color: #ff5500;
+    text-decoration: none;
+    color: #ff5500;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+.slideshow {
+    margin-top: 25px;
+}
+
+#slideshow-container {
+    display: flex;
+    justify-content: center;
+}
+
+#slideshow-container a {
+    display: block;
+    width: 200px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin: 0px 5px;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.2), -5px 5px 25px rgba(0,0,0,0.2);
+}
+
+.slideshow #slideshow-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 0 0;
+}
+
+.slideshow #slideshow-pagination a {
+    display: block;
+    width: 100px;
+    height: 7px;
+    margin: 0 7.5px;
+    padding: 0;
+    background-color: #888;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+.slideshow #slideshow-pagination a:hover {
+    background-color: #ff5500;
+    transition: 0.3s;
+}
+
+.slideshow #slideshow-pagination .active {
+    background-color: #FF5500;
+}
+
+
+
+
+
+
+
+
+
+
+
+.list-film {
+    margin-top: 25px;
+}
+
+h1 {
+    color: #ff5500;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: solid 2px;
+}
+
+.list-film .recherche {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 25px;
+    color: #707070;
+    text-align: right;
+    margin: 10px 0;
+}
+
+.barre-recherche {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px 0px 10px rgba(0,0,0,0.1), 0px -5px 10px rgba(0,0,0,0.1);
+    color: #707070;
+    padding: 0;
+}
+
+.barre-recherche input {
+    border: none;
+    height: 35px;
+    color: #707070;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.barre-recherche button {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.barre-recherche span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    font-size: 18px;
+    color: #707070;
+    margin-bottom: 2px;
+}
+
+#filtres {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+#filtres select {
+    padding: 7px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+#filtres select:hover {
+    color: #ff5500;
+    border-color: #ff5500;
+    transition: 0.3s;
+}
+
+#filtres select:focus {
+    color: #ff5500;
+    border-color: #ff5500;
+}
+
+
+
+
+.resultat {
+    margin: 25px 0px;
+}
+
+.resultat a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.resultat .affiche-film {
+    height: 190px;
+    margin-top: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.resultat .film p {
+    font-size: 13px;
+    text-align: center;
+    margin: 10px 0;
+    color: #707070;
+}
+
+.resultat .film:hover {
+    text-decoration: none;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1), -3px 3px 3px rgba(0,0,0,0.1), 0px -1px 3px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+
+.resultat .film:hover p {
+    color: #ff5500;
+}

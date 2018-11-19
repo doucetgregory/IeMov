@@ -1,0 +1,184 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+
+        <!-- ====== BARRE NAVIGATION ====== -->
+        <div class="navbar navbar-custom navbar-fixed-top">
+            <div class="container"> <!-- Adapte le contenu selon la grille -->
+                <div class="navbar-header"> <!-- En-tete du menu "titre" -->
+                    <a class="navbar-brand" href="#">ie<span>Mov</span></a>
+                </div>
+                <ul class="nav navbar-nav"><!-- Onglets du menu -->
+                    <li><a href="#">Films</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Faire une demande</a></li>
+                </ul>
+                <div class="navbar-button pull-right">
+                    <button type="" class="btn-identification">S'identifier</button>
+                    <button type="" class="btn-connexion">Se connecter</button>
+                </div>
+            </div>
+        </div>
+        <!-- ============ -->
+
+        <div class="navbar-admin">
+            <div class="container">
+                <a href="#">Ajouter un film ou une série</a>
+            </div>
+        </div>
+
+        <!-- ===== NOUVEAUTES ===== -->
+        <div class="container slideshow"> <!-- Adapte le contenu selon la grille -->
+            <div class="row">
+
+                <div id="slideshow-container">
+                    <a href="#" class="affiche-film" style="background-image:url(../font/img/affiche_film_verticale/thor_3_ragnarok.jpg)">
+                    </a>
+                    <a href="#" class="affiche-film" style="background-image:url(../font/img/affiche_film_verticale/avengers_age_of_ultron.jpg)">
+                    </a>
+                    <a href="#" class="affiche-film" style="background-image:url(../font/img/affiche_film_verticale/batman_v_superman.jpg)">
+                    </a>
+                    <a href="#" class="affiche-film" style="background-image:url(../font/img/affiche_film_verticale/captain_america_civil_war.jpg)">
+                    </a>
+                    <a href="#" class="affiche-film" style="background-image:url(../font/img/affiche_film_verticale/john_wick.jpg)">
+                    </a>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div id="slideshow-pagination">
+                    <a href="#" class="barre-1 active" position="1"></a>
+                    <a href="#" class="barre-2" position="2"></a>
+                    <a href="#" class="barre-3" position="3"></a>
+                    <a href="#" class="barre-4" position="4"></a>
+                    <a href="#" class="barre-5" position="5"></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- ============ -->
+
+        <div class="container list-film">
+           <div class="row">
+               <h1 class="col-lg-16">Vous trouverez tous les films disponible sur cette page</h1>
+           </div>
+           <div class="row recherche">
+                <div class="col-lg-5 barre-recherche">
+                    <div class="container-fluid">
+                        <input type="search" class="col-lg-14" placeholder="Faire une recherche"/>
+                        <button class="col-lg-2"><span class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </div>
+                <div class="col-lg-11 filtre">
+                   <div class="container-fluid">
+                       <div class="row">
+                           <h2 class="col-lg-16">Filtrer les résultats</h2>
+                       </div>
+                       <div class="row">
+                           <form id="filtres">
+                               <div class="form-group-inline">
+                                   <select id="classement">
+                                       <option>Les nouveautés</option>
+                                       <option>Les + populaires</option>
+                                       <option>Les + consultés</option>
+                                   </select>
+                               </div>
+                               <div class="form-group-inline">
+                                   <select id="classement">
+                                       <option>Année</option>
+                                       <option>2018</option>
+                                       <option>2017</option>
+                                   </select>
+                               </div>
+                               <div class="form-group-inline">
+                                   <select id="classement">
+                                       <option>Qualité</option>
+                                       <option>720p</option>
+                                       <option>1080p</option>
+                                   </select>
+                               </div>
+                           </form>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="row resultat">
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/avengers_age_of_ultron.jpg)"></div>
+                   <p>Avengers 2 | Age of Ultron</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/avengers_infinty_war.jpg)"></div>
+                   <p>Avengers 3 | Infinity War</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/batman_begins.jpg)"></div>
+                   <p>Batman | Begins</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film"  style="background-image: url(../font/img/affiche_film_verticale/batman_dark_knight.jpg)"></div>
+                   <p>Batman | The Dark Knight</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/batman_dark_knight_rises.jpg)"></div>
+                   <p>Batman | The Dark Knight Rises</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/batman_v_superman.jpg)"></div>
+                   <p>Batman V Superman</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/black_panther.jpg)"></div>
+                   <p>Black Panther</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/captain_america_civil_war.jpg)"></div>
+                   <p>Captain America 3 | Civil War</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/john_wick.jpg)"></div>
+                   <p>John Wick</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/john_wick_2.jpg)"></div>
+                   <p>John Wick 2</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/justice_league.jpg)"></div>
+                   <p>Justice League</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/la_momie.jpg)"></div>
+                   <p>La Momie</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/man_of_steel.jpg)"></div>
+                   <p>Man of Steel</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/mr_wolf.jpg)"></div>
+                   <p>Mr Wolf</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/ready_player_one.jpg)"></div>
+                   <p>Ready Player One</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/the_equalizer.jpg)"></div>
+                   <p>The Equalizer</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/thor_3_ragnarok.jpg)"></div>
+                   <p>Thor 3 | Ragnarok</p>
+               </a>
+               <a href="#" class="col-lg-2 film">
+                   <div class="affiche-film" style="background-image: url(../font/img/affiche_film_verticale/valerian.jpg)"></div>
+                   <p>Valerian</p>
+               </a>
+           </div>
+        </div>
+
+{% endblock %}
