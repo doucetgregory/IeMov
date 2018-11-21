@@ -22,7 +22,7 @@ class Film
     private $titre;
 
     /**
-     * @ORM\Column(type="string", length=255, default="defaut.jpg")
+     * @ORM\Column(type="string", length=255)
      */
     private $affiche;
 
